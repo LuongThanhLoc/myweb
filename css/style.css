@@ -5,8 +5,8 @@
 }
 body {
 	font-family: 'Heebo', sans-serif;
-	height: 3000px;
-	
+	height: 2300px;
+	max-width: 375px;
 }
 .container {
 	margin: 20px;
@@ -171,6 +171,8 @@ a {
 	width: 344px;
 	height: 455px;
 	margin-top: 24px;
+
+	border-bottom: 1px solid #8695A4;
 }
 .Dashboards h2  {
 	margin-top: 17px;
@@ -196,4 +198,106 @@ a {
 	font-size: 16px;
 	line-height: 25px;
 	font-weight: 900;
+}
+/* ***** */
+/* footer */
+.footer-main {
+	position: absolute;
+	top: 1650px;
+	left: 70px
+}
+.footer-icon {
+	display: flex;
+	gap: 0 30px;
+}
+.footer-icon i {
+	font-size: 30px
+}
+.footer-main p {
+	margin-top: 26px;
+
+	color: #21243D;
+
+	font-size: 12px;
+	line-height: 21px;
+	text-align: center;
+}
+/* ****** */
+
+@media screen and (max-width: 320px) {
+	.header-logo {
+		margin-right: -18%;
+	}
+	.introduce-img {
+		margin-top: 43px;
+		margin-left: 13.5%
+	}
+}
+@media screen and (min-width: 410px) and  (max-width: 46em){
+	.header-logo {
+		margin-right: -40px;
+	}
+	.introduce-content {
+		width: 350px;
+		margin-left: 10px;
+	}
+	.introduce-btn {
+		margin-left: 20px;
+		margin-top: -15px
+	}
+	.introduce-img {
+		margin-top: 43px;
+		margin-left: 14%
+	}
+	.posts-main {
+		width: 414px
+	}
+	.Dashboards-image {
+		margin-left: -4px;
+		width: 111%;
+	}
+	.Dashboards {
+		padding-bottom: 25px; 
+	}
+	.Dashboards h2 {
+		margin-bottom: 10px;
+	}
+	.footer-main  {
+		left: 90px
+	}
+}
+@media screen and (min-width: 740px) and (max-width: 1024px) {
+	.header-logo {
+		margin-right: 15px;
+	}
+	.introduce-img {
+		margin-top: 43px
+	}
+	.introduce-content {
+		width: 450px;
+		margin-left: 135px
+	}
+	.introduce-btn {
+		margin-left: 200px;
+		margin-top: -15px
+	}
+	.posts-main {
+		width: 106%
+	}
+}
+@media screen and (min-width: 1024px) {
+	.header-logo {
+		display: none
+	}
+	.introduce-content {
+		width: 450px;
+		margin-left: 260px
+	}
+	.introduce-btn {
+		margin-left: 310px;
+		margin-top: -15px
+	}
+	.posts-main {
+		width: 1024px
+	}
 }
