@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+	font-family: 'Heebo', sans-serif;
+	height: 3000px;
+	
+}
+.container {
+	margin: 20px;
+	position: relative;
+}
+.header-logo {
+	display: flex;
+	flex-direction: row-reverse;
+}
+/* introduce */
+.introduce-main {
+	position: relative;
+}
+.introduce-img {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	margin-top: 33px;
+
+}
+.introduce-img-1 {
+	z-index: 2;
+}
+.introduce-img-2 {
+	position: absolute;
+	top: 145px;
+	transform: translateY(-50%);
+	z-index: 1;
+}
+/* introduce-content */
+.introduce-content {
+	position: absolute;
+	top: 400px;
+	transform: translateY(-50%);
+
+	width: 319px;
+	
+	text-align: center;
+}
+.introduce-content h1 {
+	margin-bottom: 21px;
+
+	font-size: 32px;
+	line-height: 40px;
+	font-weight: 700;
+}
+.introduce-content p {
+	font-size: 16px;
+	line-height: 23px;
+
+}
+.introduce-btn {
+	position: absolute;
+	top: 545px;
+	left: 60px;
+
+	width: 208px;
+	height: 47px;
+	border-radius: 3px;
+
+	color: #ffffff;
+	background-color: #FF6464;
+
+	font-family: 'Heebo', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 29px;
+	text-align: center;
+
+	cursor: pointer;
+}
+/* posts-main */
+.posts-main {
+	position: absolute;
+	top: 370px;
+	left: 0;
+
+	width: 375px;
+	height: 647px;
+	margin-left: -20px;
+
+	background: #EDF7FA;
+}
+@media screen and (max-width: 320px) {
+	.header-logo {
+		margin-right: -18%;
+	}
+	.introduce-img {
+		margin-top: 43px;
+		margin-left: 13.5%
+	}
+}
+@media screen and (min-width: 410px) and  (max-width: 46em){
+	.introduce-content {
+		width: 413px;
+		max-width: fit-content
+	}
+	.introduce-btn {
+		margin-left: 20px;
+		margin-top: -15px
+	}
+	.posts-main {
+		width: 414px
+	}
+}
+@media screen and (min-width: 740px) and (max-width: 1024px) {
+	.header-logo {
+		margin-right: 15px;
+	}
+	.introduce-img {
+		margin-top: 43px
+	}
+	.introduce-content {
+		width: 450px;
+		margin-left: 135px
+	}
+	.introduce-btn {
+		margin-left: 200px;
+		margin-top: -15px
+	}
+	.posts-main {
+		width: 106%
+	}
+}
+@media screen and (min-width: 1024px) {
+	.header-logo {
+		display: none
+	}
+	.introduce-content {
+		width: 450px;
+		margin-left: 260px
+	}
+	.introduce-btn {
+		margin-left: 310px;
+		margin-top: -15px
+	}
+	.posts-main {
+		width: 1024px
+	}
+}
