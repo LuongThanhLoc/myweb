@@ -12,6 +12,11 @@ body {
 	margin: 20px;
 	position: relative;
 }
+/* general for a */
+a {
+	text-decoration: none;
+	color: #ffffff
+}
 .header-logo {
 	display: flex;
 	flex-direction: row-reverse;
@@ -89,65 +94,106 @@ body {
 	left: 0;
 
 	width: 375px;
-	height: 647px;
+	height: 680px;
 	margin-left: -20px;
+	padding-top: 10px;
+	box-sizing: border-box;
 
 	background: #EDF7FA;
 }
-@media screen and (max-width: 320px) {
-	.header-logo {
-		margin-right: -18%;
-	}
-	.introduce-img {
-		margin-top: 43px;
-		margin-left: 13.5%
-	}
+.posts-main h3 {
+	color: #21243D;
+
+	font-size: 18px;
+	line-height: 60px;
+	text-align: center;
+	font-weight: 400;
 }
-@media screen and (min-width: 410px) and  (max-width: 46em){
-	.introduce-content {
-		width: 413px;
-		max-width: fit-content
-	}
-	.introduce-btn {
-		margin-left: 20px;
-		margin-top: -15px
-	}
-	.posts-main {
-		width: 414px
-	}
+/* ******* */
+.Posts-general {
+	width: 354px;
+	height: 266px;
+	margin: 0 auto;
+
+	background: #FFFFFF;
+	box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+
+	text-align: left;
 }
-@media screen and (min-width: 740px) and (max-width: 1024px) {
-	.header-logo {
-		margin-right: 15px;
-	}
-	.introduce-img {
-		margin-top: 43px
-	}
-	.introduce-content {
-		width: 450px;
-		margin-left: 135px
-	}
-	.introduce-btn {
-		margin-left: 200px;
-		margin-top: -15px
-	}
-	.posts-main {
-		width: 106%
-	}
+.Posts-general + .Posts-general {
+	margin-top: 30px;
 }
-@media screen and (min-width: 1024px) {
-	.header-logo {
-		display: none
-	}
-	.introduce-content {
-		width: 450px;
-		margin-left: 260px
-	}
-	.introduce-btn {
-		margin-left: 310px;
-		margin-top: -15px
-	}
-	.posts-main {
-		width: 1024px
-	}
+.Posts-general h2 {
+	width: 327px;
+	height: 60px;
+	max-width: fit-content;
+	padding: 16px 30px;
+	color: #21243D;
+
+	font-size: 22px;
+	line-height: 30px;
+	font-weight: 700;
+	text-align: left;
+}
+.Posts-general p {
+	width: 314px;
+	height: 117px;
+	max-width: fit-content;
+	margin-left: 30px;
+	margin-top: 19px;
+
+	color: #21243D;
+
+	line-height: 23.5px;
+	font-weight: 400;	
+}
+/* date */
+.date {
+	display: flex;
+	flex-direction: row;
+}
+.date > span {
+	display: block;
+	margin-left: 30px;
+}
+.date  span:first-child {
+	padding-right: 24px;
+	border-right: 1px solid #000000;
+}
+/* Featuredworks-main */
+.Featuredworks-main {
+	position: absolute;
+	top: 1080px;
+
+}
+/*  Dashboards  */
+.Dashboards {
+	width: 344px;
+	height: 455px;
+	margin-top: 24px;
+}
+.Dashboards h2  {
+	margin-top: 17px;
+
+	color: #21243D;
+
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+
+}
+/* year-Dashboard */
+.year-Dashboard button {
+	width: 62px;
+	height: 25px;
+	margin-right: 22px;
+	margin-bottom: 24px;
+	border-radius: 16px;
+
+	background-color: #142850;
+	color: #ffffff;
+
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: 900;
 }
